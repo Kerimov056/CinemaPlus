@@ -188,6 +188,11 @@
 .movies div .movies_resim img {
   width: 100%;
   height: 100%;
+  transition: 0.5s ease;
+}
+.movies div .movies_resim img:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 .movies div .movies_flag {
   text-align: center;
