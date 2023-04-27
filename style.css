@@ -1,0 +1,295 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.section {
+  width: 100%;
+  height: 260px;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 110px;
+  background-color: red;
+}
+.navbar #ParkCinemaLogo {
+  position: relative;
+  display: inline-block;
+  width: 41%;
+  height: 100%;
+  background-color: #334E9E;
+}
+.navbar #ParkCinemaLogo img {
+  position: absolute;
+  display: inline;
+  width: 240px;
+  height: 93px;
+  right: 100px;
+  top: 10px;
+}
+.navbar .navbar_menu {
+  display: inline-block;
+  width: 60%;
+  height: 100%;
+}
+.navbar .navbar_menu .navbar_menu_up {
+  display: flex;
+  background-color: white;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.navbar .navbar_menu .navbar_menu_up span {
+  text-align: center;
+  color: rgb(138, 135, 135);
+  font-size: 18px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.navbar .navbar_menu .navbar_menu_up span:hover {
+  color: black;
+}
+.navbar .navbar_menu .navbar_menu_up ul {
+  display: inline-block;
+  margin-right: 100px;
+}
+.navbar .navbar_menu .navbar_menu_up ul li {
+  display: inline-block;
+  margin-left: 5px;
+  font-weight: 500;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.navbar .navbar_menu .navbar_menu_up ul li a {
+  color: black;
+  text-decoration: none;
+}
+.navbar .navbar_menu .navbar_menu_up ul li a i {
+  color: rgb(0, 208, 255);
+  margin-left: 3px;
+}
+.navbar .navbar_menu .navbar_menu_low {
+  display: flex;
+  background-color: #00ACEC;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 50%;
+}
+.navbar .navbar_menu .navbar_menu_low div {
+  text-align: center;
+  color: rgb(251, 251, 251);
+  font-size: 20px;
+  padding: 15px 19px;
+  font-weight: 600;
+  margin-left: 5px;
+  border: none;
+  cursor: pointer;
+}
+.navbar .navbar_menu .navbar_menu_low div:hover {
+  background-color: #334E9E;
+  border: 1px solid #334E9E;
+}
+.navbar .navbar_menu .navbar_menu_low #number {
+  padding: 12px 19px;
+  margin-right: 100px;
+}
+.navbar .navbar_menu .navbar_menu_low #number img {
+  width: auto;
+  height: 25px;
+  left: 0;
+  top: 6px;
+}
+
+.Nbar {
+  margin-top: 90px;
+  width: 100%;
+  height: 60px;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Nbar div {
+  text-transform: uppercase;
+  padding: 16px 14px;
+  font-size: 24px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 600;
+}
+.Nbar div a {
+  color: white;
+  text-decoration: none;
+}
+.Nbar .today {
+  background-color: #334E9E;
+  border-radius: 6px;
+}
+.Nbar:hover {
+  cursor: pointer;
+}
+
+.dropdown {
+  margin-top: -8px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  background-color: #334E9E;
+  justify-content: center;
+  align-items: center;
+}
+.dropdown .option {
+  display: inline-block;
+  margin-left: -10%;
+}
+.dropdown .option button {
+  margin-left: 38px;
+  padding: 9px 20px;
+  border-radius: 20px;
+  background-color: white;
+  color: black;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.dropdown .option .kinotatr i {
+  margin-left: 70px;
+}
+
+.movies {
+  width: 100%;
+  height: 150vh;
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  padding: 10px;
+}
+.movies div {
+  width: 270px;
+  height: 60px;
+  background-color: #F3F3F3;
+}
+.movies div h2 {
+  text-align: center;
+  padding-bottom: 30px;
+  background-color: #F3F3F3;
+}
+.movies div .movies_resim {
+  width: 270px;
+  height: 360px;
+  background-color: aliceblue;
+}
+.movies div .movies_resim img {
+  width: 100%;
+  height: 100%;
+}
+.movies div .movies_flag {
+  text-align: center;
+  background-color: white;
+  height: 50px;
+}
+.movies div .movies_buton {
+  position: relative;
+  height: 70px;
+  text-align: center;
+  background-color: #F3F3F3;
+}
+.movies div .movies_buton button {
+  margin-top: 15px;
+  padding: 10px 12px;
+  color: white;
+  background-color: #334E9E;
+  border-radius: 20px;
+  border: none;
+  font-size: 20px;
+  margin-left: -2px;
+}
+.movies div .movies_buton span {
+  position: absolute;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  color: white;
+  background-color: rgb(161, 12, 12);
+  margin-left: 20px;
+  border-radius: 50%;
+  font-size: 24px;
+  text-align: center;
+  margin-top: 15px;
+  line-height: 40px;
+}
+
+.CinemaPlusKino {
+  width: 100%;
+  height: 500px;
+  background-image: url(./resim&Logo/CienmaBackGround.jpg);
+}
+.CinemaPlusKino img {
+  margin-top: 40px;
+  height: 90%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.CinemaPlusNews {
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.CinemaPlusNews button {
+  background-color: #334E9E;
+  color: white;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+  padding: 9px 24px;
+  border: none;
+}
+
+.Footer {
+  width: 100%;
+  height: 75vh;
+  background-color: #334E9E;
+  display: flex;
+  justify-content: center;
+}
+.Footer .Footer_movies {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 70%;
+  color: white;
+  margin-left: 40px;
+  margin-right: 40px;
+}
+.Footer .Footer_movies .Footer_movies_mov {
+  margin-left: 30px;
+}
+.Footer .Footer_movies .Footer_movies_mov .movie_img {
+  width: 100%;
+  height: 140px;
+}
+.Footer .Footer_movies .Footer_movies_mov .movie_img img {
+  width: 100%;
+  height: 100%;
+}
+.Footer .Footer_movies .Footer_movies_mov .movie_text {
+  margin-top: 16px;
+}
+.Footer .Footer_movies .Footer_movies_mov .movie_text p {
+  font-size: 24px;
+  font-weight: 600;
+}
+.Footer .Footer_movies .Footer_movies_mov .movie_text h3 {
+  margin-top: 12px;
+}/*# sourceMappingURL=style.css.map */
